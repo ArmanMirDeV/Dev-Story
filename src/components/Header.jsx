@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import NavLink from "./NavLink";
 
 const Header = () => {
 
@@ -19,11 +20,11 @@ const Header = () => {
       </Link>
 
       <nav className="space-x-2">
-        <Link href="/stories">Stories</Link>
-        <Link href="/tutorials">Tutorials</Link>
-        <Link href="/login">LogIn</Link>
-        <Link href="/register">Register</Link>
-        <Link href="/about">About</Link>
+        <NavLink href="/stories">Stories</NavLink>
+        <NavLink href="/tutorials">Tutorials</NavLink>
+        <NavLink href="/login">LogIn</NavLink>
+        <NavLink href="/register">Register</NavLink>
+        <NavLink href="/about">About</NavLink>
       </nav>
     </header>
   );
